@@ -74,4 +74,4 @@ function check_start_kcl_lsp()
 	vim.lsp.buf_attach_client(bufnr, client_id)
 end
 
-vim.api.nvim_command([[autocmd BufNewFile,BufRead * lua check_start_kcl_lsp()]])
+vim.api.nvim_command([[autocmd BufNewFile,BufRead *.k lua check_start_kcl_lsp()]])
